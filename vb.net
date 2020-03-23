@@ -1,0 +1,215 @@
+Public Class SolarSystemform
+    'Public variables 
+    Dim MERCURY As Integer = 4.0
+    Dim VENUS As Integer = 7.0
+    Dim EARTH As Integer = 10
+    Dim MARS As Integer = 15
+    Dim JUPITER As Integer = 52
+    Dim SATURN As Integer = 95
+    Dim URANUS As Integer = 92
+    Dim NEPTUNE As Integer = 300
+    Dim PLUTO As Integer = 393
+    Enum PLANETS
+        Mercury = 1
+        Venus = 2
+        Earth = 3
+        Mars = 4
+        Jupiter = 5
+        Saturn = 6
+        Uranus = 7
+        Neptune = 8
+    End Enum
+
+    Private Sub btnSubmit_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSubmit.Click
+        Dim validnofiler As String
+        validnofiler = txtPlanet.Text
+        Dim valid As String = validnofiler.ToUpper()
+        If valid = "Mercury" Then
+            'if the input is recognized as Mercury
+
+            Dim closest As Double = ((Math.Abs(MERCURY - VENUS)) / 10)
+
+            Dim close2 As Double = ((Math.Abs(MERCURY - EARTH)) / 10)
+
+            Dim close3 As Double = ((Math.Abs(MERCURY - MARS)) / 10)
+
+            Dim close4 As Double = ((Math.Abs(MERCURY - JUPITER)) / 10)
+
+            Dim close5 As Double = ((Math.Abs(MERCURY - SATURN)) / 10)
+
+            Dim close6 As Double = ((Math.Abs(MERCURY - URANUS)) / 10)
+
+            Dim close7 As Double = ((Math.Abs(MERCURY - NEPTUNE)) / 10)
+
+            Dim furthest As Double = ((Math.Abs(MERCURY - PLUTO)) / 10)
+            MsgBox("The closest planets from " & valid & " in AU are in the following; Venus : " & closest & ", Earth " & close2 & ", Mars " & close3 & ", Jupiter " & close4 & ", Saturn " & close5 & ", Uranus " & close6 & ", Neptune " & close7 & " &, Pluto " & furthest & ". Also" & valid & " is " & MERCURY & " from the sun.")
+
+        ElseIf valid = "VENUS" Then
+            'if the input is recognized as Venus
+
+            Dim closest As Double = ((Math.Abs(MERCURY - VENUS)) / 10)
+
+            Dim close2 As Double = ((Math.Abs(VENUS - EARTH)) / 10)
+
+            Dim close3 As Double = ((Math.Abs(VENUS - MARS)) / 10)
+
+            Dim close4 As Double = ((Math.Abs(VENUS - JUPITER)) / 10)
+
+            Dim close5 As Double = ((Math.Abs(VENUS - SATURN)) / 10)
+
+            Dim close6 As Double = ((Math.Abs(VENUS - URANUS)) / 10)
+
+            Dim close7 As Double = ((Math.Abs(VENUS - NEPTUNE)) / 10)
+
+            Dim furthest As Double = ((Math.Abs(VENUS - PLUTO)) / 10)
+
+            MsgBox("The closest planets from " & valid & " in AU are in the following; Mercury : " & closest & ", Earth " & close2 & ", Mars " & close3 & ", Jupiter " & close4 & ", Saturn " & close5 & ", Uranus " & close6 & ", Neptune " & close7 & " &, Pluto " & furthest & ". Also" & valid & " is " & VENUS & " from the sun.")
+
+        ElseIf valid = "EARTH" Then
+            'if the input is recognized as Earth
+
+            Dim closest As Double = ((Math.Abs(VENUS - EARTH)) / 10)
+
+            Dim close2 As Double = ((Math.Abs(MARS - EARTH)) / 10)
+
+            Dim close3 As Double = ((Math.Abs(MERCURY - EARTH)) / 10)
+
+            Dim close4 As Double = ((Math.Abs(EARTH - JUPITER)) / 10)
+
+            Dim close5 As Double = ((Math.Abs(SATURN - EARTH)) / 10)
+
+            Dim close6 As Double = ((Math.Abs(EARTH - URANUS)) / 10)
+
+            Dim close7 As Double = ((Math.Abs(NEPTUNE - EARTH)) / 10)
+
+            Dim furthest As Double = ((Math.Abs(PLUTO - EARTH)) / 10)
+            MsgBox("The closest planets from " & valid & " in AU are in the following; Venus : " & closest & ", Mars " & close2 & ", Mercury " & close3 & ", Jupiter " & close4 & ", Saturn " & close5 & ", Uranus " & close6 & ", Neptune " & close7 & " &, Pluto " & furthest & ". Also" & valid & " is " & EARTH & " from the sun.")
+
+        ElseIf valid = "MARS" Then
+            'if the input is recognized as Mars
+
+            Dim closest As Double = ((Math.Abs(EARTH - MARS)) / 10)
+
+            Dim close2 As Double = ((Math.Abs(MARS - VENUS)) / 10)
+
+            Dim close3 As Double = ((Math.Abs(MERCURY - MARS)) / 10)
+
+            Dim close4 As Double = ((Math.Abs(MARS - JUPITER)) / 10)
+
+            Dim close5 As Double = ((Math.Abs(MARS - SATURN)) / 10)
+
+            Dim close6 As Double = ((Math.Abs(MARS - URANUS)) / 10)
+
+            Dim close7 As Double = ((Math.Abs(MARS - NEPTUNE)) / 10)
+
+            Dim furthest As Double = ((Math.Abs(MARS - PLUTO)) / 10)
+            MsgBox("The closest planets from " & valid & " in AU are in the following; Earth : " & closest & ", Venus " & close2 & ", Mercury " & close3 & ", Jupiter " & close4 & ", Saturn " & close5 & ", Uranus " & close6 & ", Neptune " & close7 & " &, Pluto " & furthest & ". Also" & valid & " is " & MARS & " AU from the sun.")
+
+        ElseIf valid = "JUPITER" Then
+            'if the input is recognized as Jupiter
+
+            Dim closest As Double = ((Math.Abs(MARS - JUPITER)) / 10)
+
+            Dim close2 As Double = ((Math.Abs(JUPITER - EARTH)) / 10)
+
+            Dim close3 As Double = ((Math.Abs(JUPITER - VENUS)) / 10)
+
+            Dim close4 As Double = ((Math.Abs(JUPITER - SATURN)) / 10)
+
+            Dim close5 As Double = ((Math.Abs(JUPITER - MERCURY)) / 10)
+
+            Dim close6 As Double = ((Math.Abs(JUPITER - URANUS)) / 10)
+
+            Dim close7 As Double = ((Math.Abs(JUPITER - NEPTUNE)) / 10)
+
+            Dim furthest As Double = ((Math.Abs(JUPITER - PLUTO)) / 10)
+            MsgBox("The closest planets from " & valid & " in AU are in the following; Mars : " & closest & ", Earth " & close2 & ", Venus " & close3 & ", Saturn " & close4 & ", Mercury " & close5 & ", Uranus " & close6 & ", Neptune " & close7 & " &, Pluto " & furthest & ". Also" & valid & " is " & JUPITER & " from the sun.")
+
+        ElseIf valid = "SATURN" Then
+            'if the input is recognized as Saturn
+
+            Dim closest As Double = ((Math.Abs(JUPITER - SATURN)) / 10)
+
+            Dim close2 As Double = ((Math.Abs(SATURN - MARS)) / 10)
+
+            Dim close3 As Double = ((Math.Abs(SATURN - EARTH)) / 10)
+
+            Dim close4 As Double = ((Math.Abs(SATURN - VENUS)) / 10)
+
+            Dim close5 As Double = ((Math.Abs(SATURN - MERCURY)) / 10)
+
+            Dim close6 As Double = ((Math.Abs(SATURN - URANUS)) / 10)
+
+            Dim close7 As Double = ((Math.Abs(SATURN - NEPTUNE)) / 10)
+
+            Dim furthest As Double = ((Math.Abs(SATURN - PLUTO)) / 10)
+            MsgBox("The closest planets from " & valid & " in AU are in the following; Jupiter : " & closest & ", Mars " & close2 & ", Earth " & close3 & ", Venus " & close4 & ", Mercury " & close5 & ", Uranus " & close6 & ", Neptune " & close7 & " &, Pluto " & furthest & ". Also" & valid & " is " & SATURN & " from the sun.")
+
+        ElseIf valid = "URANUS" Then
+            'if the input is recognized as Uranus
+
+            Dim closest As Double = ((Math.Abs(SATURN - URANUS)) / 10)
+
+            Dim close2 As Double = ((Math.Abs(URANUS - NEPTUNE)) / 10)
+
+            Dim close3 As Double = ((Math.Abs(URANUS - JUPITER)) / 10)
+
+            Dim close4 As Double = ((Math.Abs(URANUS - MARS)) / 10)
+
+            Dim close5 As Double = ((Math.Abs(URANUS - EARTH)) / 10)
+
+            Dim close6 As Double = ((Math.Abs(URANUS - VENUS)) / 10)
+
+            Dim close7 As Double = ((Math.Abs(URANUS - MERCURY)) / 10)
+
+            Dim furthest As Double = ((Math.Abs(URANUS - PLUTO)) / 10)
+            MsgBox("The closest planets from " & valid & " in AU are in the following; Saturn : " & closest & ", Neptune " & close2 & ", Jupiter " & close3 & ", Mars " & close4 & ", Earth " & close5 & ", Venus " & close6 & ", Mercury " & close7 & " &, Pluto " & furthest & ". Also" & valid & " is " & URANUS & " from the sun.")
+
+        ElseIf valid = "NEPTUNE" Then
+            'if the input is recognized as Neptune
+
+            Dim closest As Double = ((Math.Abs(PLUTO - NEPTUNE)) / 10)
+
+            Dim close2 As Double = ((Math.Abs(NEPTUNE - URANUS)) / 10)
+
+            Dim close3 As Double = ((Math.Abs(NEPTUNE - SATURN)) / 10)
+
+            Dim close4 As Double = ((Math.Abs(NEPTUNE - JUPITER)) / 10)
+
+            Dim close5 As Double = ((Math.Abs(NEPTUNE - MARS)) / 10)
+
+            Dim close6 As Double = ((Math.Abs(NEPTUNE - EARTH)) / 10)
+
+            Dim close7 As Double = ((Math.Abs(NEPTUNE - VENUS)) / 10)
+
+            Dim furthest As Double = ((Math.Abs(NEPTUNE - MERCURY)) / 10)
+            MsgBox("The closest planets from " & valid & " in AU are in the following; Pluto : " & closest & ", Uranus " & close2 & ", Saturn " & close3 & ", Jupiter " & close4 & ", Mars " & close5 & ", Earth " & close6 & ", Venus " & close7 & " &, Mercury " & furthest & ". Also " & valid & " is " & NEPTUNE & " from the sun.")
+
+        ElseIf valid = "PLUTO" Then
+            'if the input is recognized as Pluto
+
+            Dim closest As Double = ((Math.Abs(NEPTUNE - PLUTO)) / 10)
+
+            Dim close2 As Double = ((Math.Abs(PLUTO - URANUS)) / 10)
+
+            Dim close3 As Double = ((Math.Abs(PLUTO - SATURN)) / 10)
+
+            Dim close4 As Double = ((Math.Abs(PLUTO - JUPITER)) / 10)
+
+            Dim close5 As Double = ((Math.Abs(PLUTO - MARS)) / 10)
+
+            Dim close6 As Double = ((Math.Abs(PLUTO - EARTH)) / 10)
+
+            Dim close7 As Double = ((Math.Abs(PLUTO - VENUS)) / 10)
+
+            Dim furthest As Double = ((Math.Abs(PLUTO - MERCURY)) / 10)
+            MsgBox("The closest planets from " & valid & " in AU are in the following; Neptune : " & closest & ", Uranus " & close2 & ", Saturn " & close3 & ", Jupiter " & close4 & ", Mars " & close5 & ", Earth " & close6 & ", Venus " & close7 & " &, Mercury " & furthest & ". Also" & valid & " is " & PLUTO & " from the sun.")
+        Else
+            'As the user did not input a proper planet, the program will inform them so and close. 
+            MsgBox("Sorry there is no such planet with the name ' " & valid & "'")
+            Console.WriteLine("BYE BYE")
+            Me.Close()
+        End If
+
+    End Sub
+End Class
